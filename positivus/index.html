@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Positivus</title>
 </head>
 
 <body>
@@ -13,8 +14,8 @@
         <nav>
             <div class="logo">
                 <img src="assets/Vector.svg" alt="Logo">
+                <h1>Positivs</h1>
             </div>
-            <h1>Positivs</h1>
             <ul class="nav-links">
                 <li><a href="#">abouts us</a></li>
                 <li><a href="#">Services</a></li>
@@ -22,11 +23,24 @@
                 <li><a href="#">pricing</a></li>
                 <li><a href="#">Request a quote</a></li>
             </ul>
+            <input type="checkbox" id="trigger-menu" hidden>
+            <label for="trigger-menu" class="hamburger-menu">
+                <img src="assets/burger-bar.png" alt="menu">
+            </label>
         </nav>
+            <div class="sub-menu-box">
+                <ul class="sub-menu">
+                    <li><a href="#">abouts us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">use cases</a></li>
+                    <li><a href="#">pricing</a></li>
+                    <li><a href="#">Request a quote</a></li>
+                </ul>
+            </div>
     </header>
     <main>
         <section id="hero-banner-section">
-            <h2>Navigating the digital landscape for success</h2>
+            <h2 class="hero-heading">Navigating the digital landscape for success</h2>
             <p class="hero-subtext">
                 Our digital marketing agency helps businesses grow and succeed online through a range of services
                 including SEO, PPC, social media marketing, and content creation.
