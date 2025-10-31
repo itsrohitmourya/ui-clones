@@ -240,31 +240,31 @@ main {
 }
 .service-card > img {
   position: absolute;
-  bottom: 3.5em;
-  right: 3em;
+  bottom: 10%;
+  right: 10%;
   display: inline-block;
   width: clamp(45%, 1vw, 60%);
 }
 .service-heading {
   display: inline-block;
   height: max-content;
-  width: min(55%, 100%);
+  width: 50%;
   position: relative;
-  top: 3em;
-  left: 3em;
+  top: 20%;
+  left: 15%;
 }
 .service-heading > h3 {
   display: inline;
   background-color: greenyellow;
   border-radius: 8px;
   padding: 0px 10px;
-  font-size: clamp(26px, 1em, 36px);
+  font-size: clamp(20px, 1em, 36px);
 }
 .learn-more-link {
   position: absolute;
   display: flex;
-  left: 3em;
-  bottom: 3em;
+  left: 15%;
+  bottom: 10%;
   justify-content: center;
   align-items: center;
   gap: 1em;
@@ -274,8 +274,7 @@ main {
 .learn-more-link > img {
   height: auto;
   display: inline-block;
-  width: clamp(50px, 2vw, 70px);
-  right: 2em;
+  width: clamp(40px, 2vw, 70px);
 }
 .learn-more-link > span {
   display: none;
@@ -296,7 +295,7 @@ main {
   padding: 2.5em;
 }
 .cta-propasal-wrapper > h2 {
-  font-size: clamp(28px, 1vw, 34px);
+  font-size: clamp(26px, 1vw, 32px);
   display: inline-block;
   width: 100%;
 }
@@ -307,7 +306,7 @@ main {
   height: max-content;
   width: 100%;
   color: white;
-  font-size: clamp(24px, 1vw, 28px);
+  font-size: clamp(16px, 1vw, 20px);
   border-radius: 10px;
   padding: 1em 1em;
   display: flex;
@@ -345,15 +344,15 @@ main {
   align-items: center;
   gap: 1rem;
   overflow-x: scroll;
-  padding: 3em 0em 0em 1em;
+  padding: 3em 1em 0em 1em;
 }
 .case-study-item {
-  min-width: clamp(400px, 45vw, 500px);
-  height: min(280px, 30vh);
+  min-width: clamp(330px, 40vw, 500px);
+  height: min(300px, 50vh);
   border-radius: 40px;
   background-color: #191a23;
   color: white;
-  padding: 4rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -418,10 +417,11 @@ main {
   background-color: #ededed;
 }
 .step-title {
-  font-size: clamp(18px, 1vw, 22px);
+  font-size: clamp(16px, 1vw, 20px);
   width: 100%;
   font-weight: 400;
   line-height: 1.3em;
+  margin-left: 10px;
 }
 .step-number {
   grid-area: box1;
@@ -475,6 +475,7 @@ main {
   border-radius: 40px;
   border-top: 0px;
   border-bottom: 6px solid black;
+  position: relative;
 }
 .card-header {
   display: flex;
@@ -482,16 +483,17 @@ main {
   border-bottom: 2px solid grey;
   padding: 0em 0em 1em 0em;
   gap: 1em;
-  position: relative;
   margin-bottom: 1.2em;
 }
 .social-link {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 5%;
+  right: 12%;
 }
 .team-info {
   line-height: 1.5em;
+  font-size: clamp(14px, 1vw, 18px);
+  text-wrap: balance;
 }
 .secondary-button {
   background-color: black;
@@ -507,15 +509,14 @@ main {
 }
 #testimonials > .section-header > .testSub {
   text-wrap: stable;
-  font-size: clamp(17px, 1vw, 20px);
+  font-size: clamp(16px, 1vw, 20px);
 }
 #testimonials > .section-header {
   margin-bottom: 30px;
 }
 .testimonial-carousel {
   background-color: #191a23;
-  height: min(45vh, 65vh);
-  min-height: max-content;
+  height: auto;
   padding: 2em;
   border-radius: 40px;
   display: flex;
@@ -527,7 +528,6 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 2.5em;
-  height: 100%;
   width: 100%;
   overflow-x: scroll;
 }
@@ -546,6 +546,13 @@ main {
   flex-direction: column;
   justify-content: space-between;
   gap: 1em;
+}
+.testimonial-text{
+  font-size: clamp(16px, 1vw, 20px);
+  text-wrap: pretty;
+}
+.author-info{
+  font-size: clamp(14px, 1vw, 18px);
 }
 .carousel-navigation {
   height: min(7vh, 8vh);
@@ -620,6 +627,7 @@ main {
   border: none;
 }
 .mainform {
+  min-height: max-content;
   background-color: #ededed;
   padding: 2em;
   display: flex;
@@ -658,11 +666,14 @@ main {
   border: 2px solid yellowgreen;
 }
 .radio-group {
+  height:max(80px, 10vh) ;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0em 2em;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
+  flex-wrap: wrap;
+  gap: 1em;
 }
 .radio-group > div {
   display: flex;
@@ -672,8 +683,8 @@ main {
 }
 .radio-group > div > input {
   appearance: none;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   cursor: pointer;
   outline: 2px solid black;
   outline-offset: 5px;
@@ -817,9 +828,11 @@ footer{
 }
 .copyright{
   font-size: clamp(16px, 1vw, 18px);
+  text-align: center;
 }
 .privacy-policy-link{
   text-decoration: none;
   color: white;
   font-size: clamp(16px, 1vw, 18px);
+  text-align: center;
 }

@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <script src="script.js"></script>
     <header>
         <!-- navbar -->
         <nav>
@@ -199,22 +200,6 @@
                 </div>
             </div>
         </section>
-        <script>
-            const carousel = document.querySelector(".case-studies-list");
-
-            carousel.addEventListener('wheel', (e) => {
-                const atStart = carousel.scrollLeft <= 0;
-                let atEnd = Math.ceil(carousel.scrollLeft + carousel.clientWidth) >= carousel.scrollWidth
-
-                if (e.deltaY > 0 && !atEnd) {
-                    e.preventDefault()
-                    carousel.scrollLeft += e.deltaY
-                } else if (e.deltaY < 0 && !atStart) {
-                    e.preventDefault()
-                    carousel.scrollLeft += e.deltaY
-                }
-            })
-        </script>
         <section id="working-process">
             <div class="section-header">
                 <h2 class="section-title">Our working process</h2>
@@ -502,7 +487,8 @@
                         <label for="name">Name*</label>
                         <input type="text" id="name" name="name" placeholder="name" required>
                         <label for="emial">Email*</label>
-                        <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" name="email" id="email" placeholder="Email" required>
+                        <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" name="email"
+                            id="email" placeholder="Email" required>
                         <label for="message">Message*</label>
                         <textarea class="longMessage" name="longMessage"
                             placeholder="Enter your detailed message here"></textarea>
@@ -514,20 +500,20 @@
         </section>
     </main>
     <footer>
-        <div class ="foot-top">
-            <div class ="foot-logo-container">
+        <div class="foot-top">
+            <div class="foot-logo-container">
                 <img src="assets/icon.png" alt="Positivus Logo">
                 <span>Positivus</span>
             </div>
-            <ul class ="foot-nav-links">
+            <ul class="foot-nav-links">
                 <li><a href="#">about us</a></li>
                 <li><a href="#">services</a></li>
                 <li><a href="#">use cases</a></li>
                 <li><a href="#">pricing</a></li>
             </ul>
         </div>
-        <div class ="foot-contact">
-            <div class ="contact-info">
+        <div class="foot-contact">
+            <div class="contact-info">
                 <h3 class="contact-head">Contact us:</h3>
                 <p class="contact-email">Email: info@positivus.com</p>
                 <p class="contact-phone">Phone: 555-567-8001</p>
@@ -535,11 +521,11 @@
             </div>
             <div class="foot-form-container">
                 <form action="@" method="POST" class="subscribe-form">
-                    <input type="email" placeholder="Email" class ="footEmail" required>
+                    <input type="email" placeholder="Email" class="footEmail" required>
                     <button type="submit">Subscribe to news</button>
                 </form>
             </div>
-            <div class ="foot-social-links">
+            <div class="foot-social-links">
                 <a href="#" aria-label="Positivus Facebook page">
                     <img src="assets/Social icon (1).svg" alt="Facebook icon">
                 </a>
