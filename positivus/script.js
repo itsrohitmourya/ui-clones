@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
   createObserver("caseAnimate", caseStudyItem, false, 0.2);
 
   const processItem = document.querySelectorAll(".process-step");
-  createObserver("stepAnimate", processItem, true, 0.2);
+  createObserver("stepAnimate", processItem, true, 0);
 
   const teamCard = document.querySelectorAll(".team-card");
   createObserver("teamAnimate", teamCard, true, 0.2);
